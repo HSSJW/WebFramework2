@@ -38,7 +38,7 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color:#45a049;
 }
-
+/* 앞에 . 붙여야 함*/
 .error {
     font-size: small;
     color:red;

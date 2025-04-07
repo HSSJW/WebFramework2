@@ -1,4 +1,5 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %> <%--이 라이브러리의 이름이 c로 사용가능 --%>
+
 <%--
   Created by IntelliJ IDEA.
   User: nykim
@@ -12,7 +13,7 @@
     <title>Title</title>
 </head>
 <body>
-    <c:forEach var="offer" items="${id_offers}" >
+    <c:forEach var="offer" items="${key_offers}" >
         <p> <c:out value="${offer}"> </c:out> </p>
     </c:forEach>
 </body>

@@ -20,12 +20,12 @@ public class HomeController {
     @GetMapping("/")
     public String home(HttpServletRequest request) {
 
-        String url = request.getRequestURL().toString();
+        String url = request.getRequestURL().toString(); // 전체 url
         String clientIPaddr = request.getRemoteAddr();
 
         logger.info("Request URL: {}, Client IP: {}", url, clientIPaddr);
 
-        return "home";
+        return "home"; // VIEW의 이름 => src/main/webapp/WEB-INF/views/home.jsp
     }
 }
 
